@@ -2,7 +2,9 @@
 
 Embedding LSTM model is implemented in this prefetched based on the paper: [Learning Memory Access Patterns](https://arxiv.org/pdf/1803.02329.pdf)
 
-Model Structure: ![model](misc/model.png)
+Model Structure: 
+
+![model](misc/model.png)
 
 Tested workload: 
 
