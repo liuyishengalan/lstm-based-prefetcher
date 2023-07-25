@@ -1,6 +1,6 @@
 # LSTM-based Prefetcher
 
-Embedding LSTM model is implemented in this prefetched based on the paper: [Learning Memory Access Patterns](https://arxiv.org/pdf/1803.02329.pdf)
+Embedding LSTM model is implemented in this prefetcher, based on the paper: [Learning Memory Access Patterns](https://arxiv.org/pdf/1803.02329.pdf)
 
 Model Structure: 
 
