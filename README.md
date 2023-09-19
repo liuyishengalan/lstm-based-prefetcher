@@ -10,7 +10,7 @@ Tested workload:
 
 - Dhrystone: [source code](https://www.netlib.org/benchmark/dhry-c)
   - Training Accuracy: 100%
-  - Validating Accuracy: ~95%
+  - Validating Accuracy: na%
 - Canneal
   - Training Accuracy: na%
   - Validating Accuracy: na%
