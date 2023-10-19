@@ -2,7 +2,8 @@
 page_size = 4 * 1024 # 4KB
 
 def convert_address_to_page(memory_address):
-    page_number = memory_address / page_size
+    page_number = memory_address & ~((1 << 12) - 1)
+    
     offset = memory_address % page_size
     return page_number, offset
 
