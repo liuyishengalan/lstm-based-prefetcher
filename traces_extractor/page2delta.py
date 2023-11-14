@@ -1,6 +1,6 @@
 prev_page_addr = None
 
-with open("page.txt", "r") as f_in, open("delta.txt", "w") as f_out:
+with open("page_filtered.txt", "r") as f_in, open("delta.txt", "w") as f_out:
     for line in f_in:
         elements = line.split()
         pc = int(elements[0], 16)

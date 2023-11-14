@@ -5,6 +5,8 @@ echo "generating trace"
 
 python3 mem2page.py
 echo " mem to page done"
+python3 filter_pmap.py
+echo " filter pmap done"
 python3 page2delta.py
 echo " page to delta done"
 python3 deltaFilter.py
