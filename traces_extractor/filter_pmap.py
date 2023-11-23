@@ -30,26 +30,17 @@ def filter_page_accesses(page_file, memory_ranges, output_file):
 
 # File paths
 page_file_path = 'page.txt'
-
+# get memory ranges from pmap_output1 to pmap_output7
 memory_ranges = read_memory_ranges_from_file('pmap_output1')
-output_file = 'page1.txt'
+memory_ranges += read_memory_ranges_from_file('pmap_output2')
+memory_ranges += read_memory_ranges_from_file('pmap_output3')
+memory_ranges += read_memory_ranges_from_file('pmap_output4')
+memory_ranges += read_memory_ranges_from_file('pmap_output5')
+memory_ranges += read_memory_ranges_from_file('pmap_output6')
+memory_ranges += read_memory_ranges_from_file('pmap_output7')
+output_file = 'page_filtered.txt'
 filter_page_accesses(page_file_path, memory_ranges, output_file)
 
-memory_ranges = read_memory_ranges_from_file('pmap_output2')
-output_file = 'page2.txt'
-filter_page_accesses('page1.txt', memory_ranges, output_file)
-
-memory_ranges = read_memory_ranges_from_file('pmap_output3')
-output_file = 'page3.txt'
-filter_page_accesses('page2.txt', memory_ranges, output_file)
-
-memory_ranges = read_memory_ranges_from_file('pmap_output4')
-output_file = 'page4.txt'
-filter_page_accesses('page3.txt', memory_ranges, output_file)
-
-memory_ranges = read_memory_ranges_from_file('pmap_output5')
-output_file = 'page_filtered.txt'
-filter_page_accesses('page4.txt', memory_ranges, output_file)
 
 # print number of lines in page.txt
 print('length of page.txt:' + str(sum(1 for line in open('page.txt'))))
